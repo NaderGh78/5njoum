@@ -1,0 +1,1977 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Tajawal-Bold;
+    src: url('../fonts/Tajawal-Bold.ttf');
+}
+
+@font-face {
+    font-family: Tajawal-Regular;
+    src: url('../fonts/Tajawal-Regular.ttf');
+}
+
+@font-face {
+    font-family: NeoSansArabic-Bold;
+    src: url('../fonts/NeoSansArabic-Bold.ttf');
+}
+
+/*this font like the font awesome icons*/
+
+@font-face {
+    font-family: icofont;
+    src: url('../fonts/icofont.ttf');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+[class*="col"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+/*===========================================================================*/
+
+/*start index page style*/
+
+header .topHeader {
+    background-color: #f4f3f3;
+    padding: 32px 0 0px;
+    border-top: 13px solid #0081fc;
+}
+
+header .topHeader .row {
+    display: flex;
+    align-items: flex-end;
+}
+
+header .topHeader .col:first-of-type {
+    text-align: right;
+}
+
+header .topHeader .col:first-of-type img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+header .topHeader ul.firstSl {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0 !important;
+    margin-left: 9px !important;
+}
+
+header .topHeader ul.firstSl li a {
+    color: #008def;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 13px 14px !important;
+}
+
+header .topBottomHeader {
+    -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    position: relative;
+    z-index: 8;
+}
+
+header .topBottomHeader.scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 88888;
+}
+
+header .topBottomHeader .navbar {
+    padding: 0;
+    background-color: #fff !important;
+    position: relative;
+}
+
+header .topBottomHeader .navbar .navbar-nav {
+    align-items: center !important;
+}
+
+header .topBottomHeader .navbar-light .navbar-nav .nav-link {
+    font-family: Tajawal-Bold;
+    font-size: 18px;
+    color: #000 !important;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+header .topBottomHeader .navbar-light .navbar-nav .nav-link:hover {
+    color: #008DEF !important;
+}
+
+header .topBottomHeader .navbar-light .navbar-nav .nav-link.changeClr {
+    color: #008DEF !important;
+}
+
+header .topBottomHeader .navbar-light .navbar-nav .nav-link:nth-child(1) {
+    font-size: 45px;
+    color: #008def !important;
+    margin-right: 0;
+}
+
+header .topBottomHeader nav form .input-group {
+    margin-right: 77px;
+}
+
+header .topBottomHeader nav form .input-group span {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    display: block;
+    height: 37px;
+    width: 37px;
+    -webkit-transform: rotate(82deg) translate(1px);
+    -ms-transform: rotate(82deg) translate(1px);
+    -o-transform: rotate(82deg) translate(1px);
+    transform: rotate(82deg) translate(1px);
+    text-align: center;
+    line-height: 35px;
+    z-index: 2;
+}
+
+header .topBottomHeader nav form .input-group span i {
+    color: #0090ec;
+    cursor: pointer;
+}
+
+header .topBottomHeader nav form .input-group input {
+    background-color: transparent !important;
+    padding-right: 34px;
+    border: none;
+    border: 2px solid #0090ec;
+    -webkit-border-radius: 25px !important;
+    -moz-border-radius: 25px !important;
+    border-radius: 25px !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+header .topBottomHeader nav form .input-group input::placeholder {
+    color: #aaa;
+    padding-bottom: 21px !important;
+}
+
+header .mainHeaderContent {
+    height: 550px;
+}
+
+header .mainHeaderContent .carousel-item {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.one {
+    background-image: url('../images/img1.jpg');
+}
+
+.two {
+    background-image: url('../images/img2.jpg');
+}
+
+.three {
+    background-image: url('../images/img3.jpg');
+}
+
+header .mainHeaderContent .carousel-caption {
+    position: absolute;
+    top: 28%;
+    width: 37%;
+    text-align: right;
+    right: 31%;
+    height: auto !important;
+    padding: 0;
+}
+
+header .mainHeaderContent .carousel-item h1 {
+    font-size: 70px;
+    font-family: Tajawal-Bold;
+}
+
+header .mainHeaderContent .carousel-item .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/**********************/
+
+/*start main*/
+
+main .ourNews .container {
+    display: flex;
+}
+
+main .ourNews .lft {
+    width: 25%;
+    display: inline-block;
+}
+
+main .ourNews .lft .openningSection {
+    background-color: #fff;
+    /*    padding-bottom: 45px;*/
+    border-bottom: 11px solid #0081fc;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    /*    margin-top: -430px;*/
+    margin-top: -445px;
+    position: relative;
+    z-index: 10;
+}
+
+main .ourNews .lft .OpeningBanner {
+    display: inline-block;
+    font-family: tajawal-regular;
+    /*    width: 80%;*/
+    font-size: 34px;
+    position: absolute;
+    color: #fff;
+    /*    right: -40px;*/
+    right: -47px;
+    /*    top: -36px;*/
+    top: -19px;
+    background-color: rgba(0, 145, 235, .8);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /*    padding: 12px;*/
+    padding: 8px 55px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    text-align: center;
+    z-index: 17 !important;
+}
+
+main .ourNews .lft .openningSection p {
+    padding: 25px 17px;
+    font-size: 13px;
+    font-family: Tajawal-Regular;
+    color: #6d6e71;
+    text-align: justify;
+}
+
+/*start styling the voice section*/
+
+main .ourNews .lft .openningSection .listen h3 {
+    font-family: Tajawal-Bold;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    padding-right: 21px;
+}
+
+main .ourNews .lft .openningSection .openningVoice {
+    direction: ltr !important;
+    margin-left: 197px;
+    margin-top: -16px;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-progress-bar,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-volume {
+    display: none !important;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-speaker {
+    background-image: none !important;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-time-current,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-time-total {
+    display: none !important;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna button {
+    background-color: transparent !important;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-prev,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-next,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-play,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-pause {
+    position: relative !important;
+    background-image: none !important;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-prev:after,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-play:after,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-pause:after,
+main .ourNews .lft .openningSection .openningVoice .luna .luna-next:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0098E3;
+    /* font-size: 20px; */
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-prev:after {
+    content: "\f04a";
+    left: 23px;
+    top: -7px;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-play:after {
+    content: "\f04b";
+    left: 7px;
+    top: -7px;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-pause:after {
+    content: "\f04c";
+    left: -20px;
+    top: -7px;
+}
+
+main .ourNews .lft .openningSection .openningVoice .luna .luna-next:after {
+    content: "\f04e";
+    left: -39px;
+    top: -7px;
+}
+
+/*end styling the voice section*/
+
+main .ourNews .lft .slBtn {
+    margin-top: 20px;
+}
+
+main .ourNews .lft .slBtn .row {
+    margin-top: 7px !important;
+}
+
+main .ourNews .lft .slBtn .face,
+main .ourNews .lft .slBtn .tweet {
+    text-align: center;
+    direction: ltr;
+}
+
+main .ourNews .lft .slBtn .face button {
+    padding: 10px;
+    font-family: Tajawal-Bold;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    width: 98%;
+    text-align: left !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+main .ourNews .lft .slBtn .face button i {
+    margin-right: 4px;
+}
+
+main .ourNews .lft .slBtn .face button span {
+    margin-left: 5px;
+}
+
+main .ourNews .rgt {
+    width: 72%;
+    display: inline-block;
+    margin-right: 32px;
+    /*    margin-top: -123px;*/
+    margin-top: -90px;
+    z-index: 10;
+}
+
+main .ourNews .rgt hr {
+    border: 3px solid #0081fc;
+    width: 95%;
+    /*
+    margin-top: -8px;
+    margin-bottom: 45px;
+*/
+    margin-top: 0px;
+    margin-bottom: 62px;
+}
+
+/*this style of card unified for other pages as well*/
+
+.myCustomCard {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+    margin-bottom: 45px;
+}
+
+.myCustomCard .card-body {
+    padding: 15px 15px 8px !important;
+}
+
+.myCustomCard h5 {
+    font-family: Tajawal-bold;
+    font-size: 15px;
+}
+
+.myCustomCard p {
+    font-family: Tajawal-Regular;
+    color: #6d6e71;
+    font-size: 13px;
+    margin-bottom: 0 !important;
+    text-align: justify !important;
+}
+
+.myCustomCard a {
+    text-decoration: none;
+}
+
+.myCustomCard a.enterToNews {
+    font-family: Tajawal-Regular;
+    font-size: 17px;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: -7%;
+    color: #fff;
+    background-color: #0098e3;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+
+/*end style of card unified for other pages as well*/
+
+main .mainVideos {
+    background-color: #e6e7e8;
+    margin-top: 75px;
+}
+
+main .mainVideos .headVideo {
+    padding: 20px 0 10px;
+}
+
+main .mainVideos .headVideo h3 {
+    font-family: Tajawal-Bold;
+    font-size: 30px;
+    color: #0081fc;
+}
+
+/*-----------------------------------------*/
+
+/*start style the 3 slider */
+
+main .mainVideos .videoSlider {
+    background-color: #e6e7e8;
+}
+
+main .mainVideos .videoSlider button.btnMore {
+    position: relative !important;
+    top: -70px !important;
+}
+
+main .mainVideos .videoSlider .mycanvas {
+    display: none !important;
+}
+
+main .mainVideos .videoSlider .pp_overlay {
+    position: fixed !important;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
+.pp_pic_holder {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 555555 !important;
+}
+
+div.pp_overlay {
+    z-index: 90000 !important;
+}
+
+.pp_default .pp_content_container .pp_right {
+    padding-right: 23px !important;
+}
+
+a.pp_close {
+    color: transparent !important;
+}
+
+main .mainVideos .videoSlider .multimedia_perspective_carousel.black.ui-draggable.ui-draggable-handle {
+    margin-top: -65px !important;
+    height: 510px !important;
+}
+
+main .mainVideos .videoSlider .multimedia_perspective_carousel.black .contentHolderUnit:before {
+    position: absolute;
+    content: "\ecbb";
+    font-size: 45px;
+    color: #fff;
+    font-family: icofont;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    background: #0081fc;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+}
+
+main .mainVideos .videoSlider .carouselText {
+    color: #fff;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 55555;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 25px 20px 11px;
+    text-align: right;
+}
+
+main .mainVideos .videoSlider .carouselText p {
+    width: 64%;
+    font-family: Tajawal-Bold;
+    font-size: 16px;
+}
+
+main .mainVideos .videoSlider .multimedia_perspective_carousel .contentHolder {
+    cursor: default !important;
+}
+
+/*div.pp_overlay{z-index: 999999999999999;}*/
+
+/*end style the 3 slider */
+
+button.btnMore {
+    border: none;
+    background-color: #0097e4;
+    padding: 2px 60px 7px;
+    font-size: 23px;
+    color: #fff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+main .mainBottomContent {
+    margin-top: 70px;
+}
+
+main .mainBottomContent .container {
+    padding-right: 52px !important;
+}
+
+main .leftContent h3,
+main .righttContent h3 {
+    font-family: Tajawal-bold;
+}
+
+main .leftContent hr,
+main .righttContent hr {
+    border: 3px solid #0081fc;
+    width: 92%;
+}
+
+/*end main*/
+
+/*start footer style*/
+
+footer {
+    margin-top: 20px;
+}
+
+footer .mainFooter {
+    border-bottom: 25px solid #0096e5;
+    background-color: #e6e7e8;
+    padding: 25px 0;
+}
+
+footer .mainFooter .noMargbottInMob {
+    margin-bottom: 10px;
+}
+
+footer .mainFooter .col-xl-3 {
+    text-align: right;
+    border-left: 1px solid #0081fc;
+}
+
+footer .mainFooter .col-xl-3:nth-child(2),
+footer .mainFooter .col-xl-3:nth-child(3) {
+    padding: 0 17px !important;
+}
+
+footer .mainFooter .col-xl-3:nth-child(4) p {
+    margin-top: 30px;
+}
+
+footer .mainFooter .col-xl-3:last-of-type {
+    border-left: none;
+    padding: 0 20px 0 0 !important;
+}
+
+footer .mainFooter p.footerPara {
+    margin-bottom: 15px;
+    width: 82%;
+    font-family: Tajawal-bold;
+    font-size: 13px;
+    color: #000;
+    line-height: 2;
+    text-align: justify;
+}
+
+footer .mainFooter p {
+    font-family: Tajawal-bold;
+    font-size: 13px;
+    color: #000;
+}
+
+footer .mainFooter h3 {
+    margin-bottom: 16px;
+    font-family: Tajawal-bold;
+    font-size: 21px;
+    color: #0081fc;
+    padding-bottom: 7px;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+footer .mainFooter img.footImg {
+    width: 115px !important;
+    height: auto;
+}
+
+footer .mainFooter ul {
+    margin-bottom: 0;
+}
+
+footer .mainFooter ul li {
+    margin-left: 10px;
+}
+
+footer .mainFooter ul li a {
+    display: block;
+    height: 28px;
+    width: 28px;
+    border: 2px solid #0081fc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+}
+
+footer .mainFooter ul li i {
+    color: #0081fc;
+    font-size: 15px;
+}
+
+/*footer .mainFooter .col-md-5{margin-top: 40px !important;}*/
+
+footer .mainFooter h3 a {
+    text-decoration: none;
+    color: #0096e5;
+}
+
+footer .bottomFooter {
+    padding: 50px 0;
+}
+
+footer .bottomFooter h3 {
+    margin-bottom: 0;
+    font-family: Tajawal-bold;
+    font-size: 21px;
+    color: #000;
+}
+
+footer .mainFooter form {
+    width: 100%;
+    text-align: center;
+}
+
+footer .mainFooter form input {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+footer .mainFooter form input::placeholder {
+    color: #aaa;
+    text-align: center;
+}
+
+/*end footer style*/
+
+/*end index page style*/
+
+/*****************start responsive for the index page in arabic*******************/
+
+@media (max-width: 320px) {
+
+    main .ourNews .lft .openningSection .openningVoice {
+        margin-left: 46vw !important;
+    }
+
+    .pp_pic_holder.pp_default {
+        /*        left: 8.5px !important;*/
+        width: 313px !important;
+        /*        right: 0px;*/
+    }
+
+}
+
+/*320*/
+
+@media (max-width: 576px) {
+
+    header .topHeader .row {
+        flex-direction: column;
+    }
+
+    header .topHeader .col:first-of-type {
+        text-align: center;
+    }
+
+    header .topHeader .col:first-of-type img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header .topHeader ul.firstSl {
+        justify-content: space-around;
+        margin-bottom: 10px !important;
+    }
+
+    header .topHeader ul.firstSl li a {
+        padding: 0;
+    }
+
+    header .topBottomHeader .navbar {
+        padding: 15px 5px;
+    }
+
+    header .topBottomHeader nav form .input-group {
+        margin-right: 0px;
+    }
+
+    header .topBottomHeader .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+    }
+
+    /*    style custom the menu icon in the main menu in small device*/
+    header .topBottomHeader .navbar .navbar-toggler {
+        border: 2px solid #0090ec !important;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding: 4px;
+        outline: none !important;
+        width: 45px;
+        height: 45px;
+    }
+
+    header .topBottomHeader .navbar .navbar-toggler span {
+        color: #0090ec;
+        font-size: 25px;
+    }
+
+    header .mainHeaderContent .carousel-caption {
+        top: 40%;
+        width: 70%;
+        text-align: center;
+        right: 13%;
+    }
+
+    header .mainHeaderContent .carousel-item h1 {
+        font-size: 40px;
+    }
+
+    main .ourNews .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .ourNews .lft {
+        width: 100%;
+    }
+
+    main .ourNews .lft .openningSection {
+        margin-top: -80px;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice {
+        margin-left: 64vw;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice .luna .luna-prev:after {
+        left: 6vw;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice .luna .luna-pause:after {
+        left: -4vw;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice .luna .luna-next:after {
+        left: -9vw;
+    }
+
+    main .mainVideos {
+        margin-top: 25px;
+    }
+
+    /*style the you tube*/
+    .pp_pic_holder.pp_default {
+        /*        left: 62.5px !important;*/
+        width: 313px !important;
+    }
+
+    .pp_content {
+        margin-right: -9px;
+        height: 180px !important;
+        width: 279px !important;
+    }
+
+    div.pp_default .pp_expand {
+        display: none !important;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 140px;
+    }
+
+    .pp_details {
+        width: 100% !important;
+    }
+
+    .pp_default .pp_content_container .pp_right {
+        padding-right: 30px !important;
+    }
+
+    /*end style the you tube*/
+    /*3d slider*/
+    main .mainVideos .videoSlider .multimedia_perspective_carousel.black.ui-draggable.ui-draggable-handle {
+        margin-top: -22px !important;
+        height: auto !important;
+    }
+
+    main .mainVideos .videoSlider button.btnMore {
+        top: -18px !important;
+    }
+
+    main .mainVideos .videoSlider .carouselText {
+        padding: 8px 10px 0px;
+    }
+
+    main .mainVideos .videoSlider .carouselText p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+    /*end 3d slider*/
+    main .ourNews .rgt {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 25px;
+    }
+
+    .myCustomCard {
+        width: 90% !important;
+        margin: 0 auto 35px;
+    }
+
+    .myCustomCard a.enterToNews {
+        top: 46vw;
+        font-size: 4vw;
+    }
+
+    main .ourNews .rgt hr {
+        margin: 0 auto 25px;
+    }
+
+    main .ourNews .lft .slBtn .face button {
+        padding: 15px;
+        margin-bottom: 15px;
+        text-align: center !important;
+        font-size: 20px;
+    }
+
+    main .ourNews .lft .slBtn .row {
+        margin-top: 0 !important;
+    }
+
+    main .mainBottomContent {
+        margin-top: 25px;
+    }
+
+    main .mainBottomContent .container {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    main .leftContent hr,
+    main .righttContent hr {
+        margin: 0 auto 20px !important;
+    }
+
+    main .leftContent h3,
+    main .righttContent h3 {
+        margin-right: 14px;
+    }
+
+    footer .mainFooter .col-xl-3 {
+        border-left: none;
+    }
+
+    footer .mainFooter p.footerPara {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    footer .mainFooter p {
+        font-size: 15px;
+    }
+
+    footer .mainFooter .col-xl-3:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    footer .mainFooter .col-xl-3:nth-child(2),
+    footer .mainFooter .col-xl-3:nth-child(3) {
+        padding: 0 !important;
+    }
+
+    footer .mainFooter img.footImg {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    footer .mainFooter .col-xl-3:last-of-type {
+        padding: 0 !important;
+    }
+
+    footer .bottomFooter .col-md-6:first-of-type,
+    footer .bottomFooter .col-md-6:last-of-type {
+        text-align: center !important;
+    }
+
+    footer .bottomFooter h3 {
+        font-size: 5vw;
+    }
+
+}
+
+/*end 576*/
+
+/***********************/
+
+@media (max-width:1024px) and (min-width: 768px) {
+
+    header .topHeader .row {
+        flex-direction: column;
+    }
+
+    header .topHeader .col:first-of-type {
+        text-align: center;
+    }
+
+    header .topHeader .col:first-of-type img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header .topHeader ul.firstSl {
+        justify-content: space-between;
+        margin-left: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    /*
+    header .topHeader ul.firstSl li {
+        margin-right: 26px;
+    }
+*/
+    header .topHeader ul.firstSl li a {
+        padding: 0 !important;
+    }
+
+    header .topBottomHeader .navbar {
+        padding: 15px 5px;
+    }
+
+    header .topBottomHeader .navbar-nav {
+        float: none !important;
+    }
+
+    header .topBottomHeader nav form .input-group {
+        margin-right: 0px;
+    }
+
+    header .topBottomHeader .navbar-light .navbar-nav .nav-link {
+        margin-right: 0;
+    }
+
+    /*    style custom the menu icon in the main menu in small device*/
+    header .topBottomHeader .navbar .navbar-toggler {
+        border: 2px solid #0090ec !important;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        padding: 4px;
+        outline: none !important;
+        width: 45px;
+        height: 45px;
+    }
+
+    header .topBottomHeader .navbar .navbar-toggler span {
+        color: #0090ec;
+        font-size: 25px;
+    }
+
+    header .mainHeaderContent .carousel-caption {
+        top: 40%;
+        width: 70%;
+        text-align: center;
+        right: 13%;
+    }
+
+    header .mainHeaderContent .carousel-item h1 {
+        font-size: 40px;
+    }
+
+    main .ourNews .lft .openningSection p {
+        font-size: 18px;
+    }
+
+    main .ourNews .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .ourNews .lft {
+        width: 100%;
+    }
+
+    main .ourNews .lft .openningSection {
+        margin-top: -280px;
+        width: 50%;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice {
+        margin-left: 234px;
+        margin-top: 0;
+    }
+
+    main .ourNews .rgt {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 25px;
+    }
+
+    .myCustomCard {
+        width: 90% !important;
+        margin: 0 auto 35px;
+    }
+
+    .myCustomCard h5 {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    .myCustomCard p {
+        font-size: 16px;
+    }
+
+    .myCustomCard a {
+        font-size: 16px;
+    }
+
+    .myCustomCard a.enterToNews {
+        top: 34%;
+    }
+
+    main .ourNews .rgt hr {
+        margin: 0 auto 25px;
+        display: none;
+    }
+
+    main .ourNews .lft .slBtn .face button {
+        padding: 15px;
+        margin-bottom: 15px;
+        text-align: center !important;
+        font-size: 20px;
+    }
+
+    main .ourNews .lft .slBtn .row {
+        margin-top: 0 !important;
+    }
+
+    main .mainBottomContent {
+        margin-top: 25px;
+    }
+
+    main .mainBottomContent .container {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    main .leftContent hr,
+    main .righttContent hr {
+        width: 94%;
+        margin: 0 auto 20px !important;
+    }
+
+    main .leftContent h3,
+    main .righttContent h3 {
+        margin-right: 14px;
+    }
+
+    main .mainVideos {
+        margin-top: 25px;
+    }
+
+    /*style the you tube*/
+    .pp_pic_holder.pp_default {
+        left: 14%;
+    }
+
+    iframe {
+        width: 100% !important;
+    }
+
+    .pp_details {
+        width: 100% !important;
+    }
+
+    /*end style the you tube*/
+    /*3d slider*/
+    main .mainVideos .videoSlider .multimedia_perspective_carousel.black.ui-draggable.ui-draggable-handle {
+        margin-top: -46px !important;
+        height: auto !important;
+    }
+
+    div.pp_default .pp_content_container .pp_left {
+        padding-left: 9px;
+    }
+
+
+    main .mainVideos .videoSlider button.btnMore {
+        top: -18px !important;
+    }
+
+    main .mainVideos .videoSlider .carouselText {
+        padding: 8px 10px 0px;
+    }
+
+    main .mainVideos .videoSlider .carouselText p {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /*end 3d slider*/
+    footer .mainFooter .col-xl-3 {
+        border-left: none;
+    }
+
+    footer .mainFooter p.footerPara {
+        width: 73%;
+        font-size: 17px;
+    }
+
+    footer .mainFooter p {
+        font-size: 15px;
+    }
+
+    footer .mainFooter .col-xl-3:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    footer .mainFooter .col-xl-3:nth-child(2),
+    footer .mainFooter .col-xl-3:nth-child(3) {
+        padding: 0 !important;
+    }
+
+    footer .mainFooter img.footImg {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    footer .mainFooter .col-xl-3:last-of-type {
+        padding: 0 !important;
+    }
+
+    footer .bottomFooter h3 {
+        font-size: 19px;
+    }
+
+    footer .mainFooter form {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+/*end 768 and 1024*/
+
+/***********************/
+
+@media (max-width:991px) and (min-width: 768px) {
+
+    .pp_content {
+        height: 256px !important;
+        width: 100% !important;
+        margin-right: -5px;
+    }
+
+    .pp_default .pp_content_container .pp_right {
+        padding-right: 26px !important;
+        height: 250px;
+    }
+
+}
+
+/***********************/
+
+@media (max-width:1024px) and (min-width: 991px) {
+
+    header .topHeader .row {
+        flex-direction: row;
+    }
+
+    header .topBottomHeader .navbar {
+        padding: 0 5px;
+    }
+
+    header .topHeader .col:first-of-type {
+        text-align: right;
+    }
+
+    header .topHeader .col:first-of-type img {
+        width: 340px;
+    }
+
+    header .topHeader ul.firstSl {
+        justify-content: flex-end;
+    }
+
+    header .topHeader ul.firstSl li {
+        margin-right: 26px;
+    }
+
+    header .topBottomHeader .navbar-light .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+
+    header .topBottomHeader nav form .input-group {
+        margin-right: 7px;
+    }
+
+    main .ourNews .lft .openningSection {
+        margin-top: -259px;
+        width: 40%;
+    }
+
+    main .ourNews .lft .openningSection .openningVoice {
+        margin-left: 264px;
+        margin-top: 0;
+    }
+
+    .pp_content {
+        height: 330px !important;
+        width: 100% !important;
+        margin-right: -5px !important;
+    }
+
+    .pp_default .pp_content_container .pp_right {
+        padding-right: 27px !important;
+        height: 330px !important;
+    }
+
+    div.pp_default .pp_content_container .pp_left {
+        padding-left: 9px !important;
+    }
+
+    main .leftContent h3,
+    main .righttContent h3 {
+        margin-right: 25px;
+    }
+
+    .myCustomCard a.enterToNews {
+        top: 48%;
+        width: 38%;
+    }
+
+    footer .mainFooter p.footerPara {
+        width: 73%;
+        font-size: 16px;
+    }
+
+}
+
+/*end 768 and 1024*/
+
+/***********************/
+
+@media (min-width: 1440px) {
+
+    main .mainVideos .videoSlider .multimedia_perspective_carousel.black.ui-draggable.ui-draggable-handle {
+        margin-top: -108px !important;
+        height: auto !important;
+    }
+
+    .pp_bottom .pp_left,
+    .pp_bottom .pp_right,
+    div.pp_default .pp_bottom .pp_middle {
+        top: -1px;
+    }
+
+}
+
+/*****************end responsive for the index page *******************/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*****************start arts page*******************/
+
+#arts main .mainBottomContent {
+    margin-top: 70px;
+}
+
+#arts main .righttContent .myCustomCard .ytubeIcon i {
+    position: absolute;
+    top: 33%;
+    left: 13px;
+    height: 35px;
+    width: 35px;
+    background: #0081fc;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 21px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#arts main .righttContent+hr {
+    border: 3px solid #0081fc;
+    width: 96%;
+    margin-top: -15px;
+    margin-bottom: 27px;
+}
+
+#arts main .mainPagination ul.pagination {
+    justify-content: center !important;
+    border: none !important;
+}
+
+#arts main .mainPagination ul.pagination .page-link {
+    font-family: Tajawal-Bold;
+    padding: 0 .75rem !important;
+    border: none !important;
+    color: #c0c5ca;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+#arts main .mainPagination ul.pagination .page-link.active {
+    border-bottom: 2px solid red !important;
+}
+
+#arts main .mainPagination ul.pagination li.pageNumber.active {
+    border-bottom: 2px solid #0096e5 !important;
+
+}
+
+#arts main .mainPagination ul.pagination .page-link:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #0096e5 !important;
+}
+
+#arts main .mainPagination ul.pagination .page-link:hover {
+    background-color: transparent !important;
+}
+
+/*****************start responsive for the arts page *******************/
+
+@media (max-width: 576px) {
+    #arts main .righttContent .myCustomCard .ytubeIcon i {
+        top: 50vw;
+        left: 20px;
+    }
+}
+
+/*end 576*/
+
+/*******************************/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    #arts main .righttContent .myCustomCard .ytubeIcon i {
+        top: 24vw;
+    }
+
+}
+
+/*end 1024*/
+
+/*******************************/
+
+/*****************end responsive for the arts page *******************/
+
+/*****************end arts page*******************/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*****************start Saquafa page*******************/
+
+#Saquafa main .mainBottomContent .head {
+    text-align: right;
+}
+
+#Saquafa main .mainBottomContent .head .row .col:nth-child(2) {
+    text-align: left;
+}
+
+#Saquafa main .mainBottomContent .head h3 {
+    font-size: 20px;
+}
+
+#Saquafa main .mainBottomContent .head .row .col:nth-child(2) h3 {
+    margin-left: 55px;
+    cursor: pointer;
+}
+
+#Saquafa main .mainBottomContent .head+hr {
+    width: 96%;
+    margin-top: 0 !important;
+}
+
+@media (max-width: 576px) {
+    #Saquafa main .mainBottomContent .head .row .col:nth-child(2) h3 {
+        margin-left: 24px;
+    }
+}
+
+/*****************end Saquafa page*******************/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*****************start about page*******************/
+
+#about main .banner {
+    margin-top: 80px;
+    height: 750px;
+    background-image: url(../images/banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about main .mainContent {
+    margin-top: 60px;
+}
+
+#about main .mainContent .col-xl-4 {
+    text-align: left;
+}
+
+#about main .mainContent p {
+    font-family: Tajawal-Regular;
+    text-align: justify;
+    font-size: 20px;
+    color: #6d6e71;
+    /*    padding-left: 26px;*/
+}
+
+#about main .mainContent p span {
+    font-family: Tajawal-bold;
+    color: #6d6e71;
+}
+
+#about main .contactUs {
+    background-color: #f4f4f4;
+    margin: 50px 0 70px;
+    padding: 20px 0 10px;
+}
+
+#about main .contactUs ul li {
+    font-family: Tajawal-bold;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+#about main .contactUs ul li a {
+    text-decoration: none;
+}
+
+#about main .contactUs ul li h3 {
+    color: #2475e3;
+}
+
+#about main .contactUs ul:last-of-type li {
+    margin-right: 20px;
+}
+
+/*****************start responsive for the about page *******************/
+
+@media (max-width: 576px) {
+
+    #about main .banner {
+        margin-top: 40px;
+        height: 400px;
+    }
+
+    #about main .mainContent {
+        margin-top: 25px;
+    }
+
+    #about main .mainContent .col-xl-4 img {
+        width: 100% !important;
+    }
+
+    #about main .mainContent p {
+        padding-left: 0;
+    }
+
+    #about main .contactUs ul:last-of-type li {
+        margin-right: 0;
+    }
+
+    #about main .contactUs .row:last-of-type ul {
+        justify-content: space-around !important;
+    }
+
+}
+
+/*end 576*/
+
+/*************************/
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+    #about main .banner {
+        margin-top: 40px;
+        height: 400px;
+    }
+
+    #about main .mainContent {
+        margin-top: 25px;
+    }
+
+    #about main .mainContent .col-xl-4 img {
+        width: 100% !important;
+    }
+
+    #about main .contactUs ul:last-of-type li {
+        margin-right: 0;
+    }
+
+    #about main .contactUs .row:last-of-type ul {
+        justify-content: space-around !important;
+    }
+
+}
+
+/*end 768px*/
+
+/*************************/
+
+@media (max-width: 1024px) {
+
+    #about main .mainContent .col-xl-4 img {
+        width: 100% !important;
+    }
+
+}
+
+/*end 1024px*/
+
+/*****************end responsive for the about page *******************/
+
+/*****************end about page*******************/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*****************start article page*******************/
+
+main .mainContent {
+    margin-top: 35px;
+}
+
+main .articleHead {
+    margin-top: 70px;
+    text-align: right;
+}
+
+main .articleHead h2 {
+    width: 63%;
+    font-family: Tajawal-bold;
+    font-size: 28px;
+}
+
+main .mainContent .imgBannerTitle .leftTitle {
+    direction: ltr;
+}
+
+main .mainContent .imgBannerTitle .leftTitle span,
+main .mainContent .imgBannerTitle .rightTitle span {
+    margin-left: 10px;
+    color: #6d6e71;
+    font-family: Tajawal-bold;
+    font-size: 18px;
+}
+
+main .mainContent .imgBannerTitle .leftTitle span:nth-child(1) {
+    font-weight: bold;
+}
+
+main .mainContent .imgBannerTitle .leftTitle span i,
+main .mainContent .imgBannerTitle .rightTitle span i {
+    margin-right: 10px;
+}
+
+main .mainContent .imgBannerTitle .rightTitle {
+    direction: ltr;
+    margin-right: 15px;
+}
+
+main .mainContent .banner {
+    height: 450px;
+    background-image: url(../images/banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .mainContent .col-xl-4 {
+    text-align: left;
+}
+
+main .mainContent .imgBannerTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+main .mainContent .autherSection {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .5);
+    padding: 10px 15px 150px;
+}
+
+main .mainContent .autherSection h3 {
+    text-align: right;
+    font-family: Tajawal-bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+main .mainContent .autherSection .autherImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+main .mainContent .autherSection p {
+    font-family: Tajawal-Regular;
+    font-size: 20px;
+    text-align: justify !important;
+    color: #6d6e71;
+    margin-top: 15px;
+    padding: 0 5px;
+    border-bottom: none;
+}
+
+main .mainContent p {
+    font-family: Tajawal-Regular;
+    color: #6d6e71;
+    text-align: justify;
+    font-size: 20px;
+    /*    padding-left: 26px;*/
+    padding-bottom: 25px;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+main .mainContent p span {
+    font-family: Tajawal-bold;
+    color: #6d6e71;
+}
+
+main .contactUs h3 {
+    font-family: Tajawal-bold;
+    font-size: 18px;
+    color: #6d6e71;
+}
+
+main .contactUs ul li {
+    font-family: Tajawal-bold;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+main .contactUs ul li h3 {
+    font-size: 18px;
+    margin-bottom: 0 !important;
+    margin-top: 5px;
+    color: #6d6e71;
+}
+
+main .contactUs ul li a {
+    color: #2475e3;
+    text-decoration: none;
+}
+
+main .relatedPost {
+    margin-top: 50px;
+}
+
+main .relatedPost .relatedHead {
+    text-align: right;
+    border-bottom: 3px solid #777;
+}
+
+main .relatedPost .relatedHead h3 {
+    font-family: Tajawal-bold;
+    font-size: 22px;
+    color: #6d6e71;
+}
+
+/*style the newsSlider owel slider*/
+
+main .relatedPost .newsSlider {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+main .relatedPost .newsSlider .newsEvent p {
+    font-family: Tajawal-bold;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+main .relatedPost .newsSlider .container {
+    padding: 0 !important;
+}
+
+main .relatedPost .newsSlider .owl-carousel {
+    width: 100% !important;
+    margin: auto;
+}
+
+main .relatedPost .owl-carousel .owl-item img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+main .relatedPost .owl-dots {
+    display: none !important;
+}
+
+main .relatedPost .owl-theme .owl-nav {
+    margin-top: 10px !important;
+    text-align: left !important;
+}
+
+main .relatedPost .owl-carousel .owl-nav button.owl-next,
+main .relatedPost .owl-carousel .owl-nav button.owl-prev {
+    border: 2px solid #ddd !important;
+    padding: 20px !important;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    left: -7px;
+}
+
+main .relatedPost .owl-carousel .owl-nav button.owl-next span,
+main .relatedPost .owl-carousel .owl-nav button.owl-prev span {
+    color: #777 !important;
+    position: absolute;
+    top: -19px;
+    left: 12px;
+    font-size: 44px;
+}
+
+main .relatedPost .owl-theme .owl-nav [class*=owl-]:hover {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+/*end the newsSlider owel slider*/
+
+/*----------------------------------------------*/
+
+/************start responsive with all media for article page*********************/
+
+@media (max-width: 576px) {
+
+    main .articleHead h2 {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    main .mainContent {
+        margin-top: 20px;
+    }
+
+    main .mainContent .imgBannerTitle {
+        margin-bottom: 9px;
+    }
+
+    main .mainContent .banner {
+        height: 370px;
+    }
+
+    main .mainContent .imgBannerTitle .leftTitle span,
+    main .mainContent .imgBannerTitle .rightTitle span {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    main .mainContent .imgBannerTitle .rightTitle {
+        margin-right: 0;
+    }
+
+    main .mainContent .autherSection .autherImg img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    main .mainContent .autherSection {
+        padding: 10px 15px 15px;
+        margin-top: 20px;
+    }
+
+    main .contactUs {
+        margin-top: 30px;
+    }
+
+    main .relatedPost .relatedHead {
+        margin-top: -28px;
+    }
+
+    main .contactUs ul li {
+        margin-left: 3vw;
+    }
+
+    main .relatedPost {
+        margin-top: 30px;
+    }
+
+    main .relatedPost .newsSlider {
+        margin-bottom: 5px;
+    }
+
+}
+
+/*end 576*/
+
+/************************/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    main .articleHead h2 {
+        width: 100%;
+    }
+
+    main .mainContent .imgBannerTitle {
+        margin-bottom: 7px;
+    }
+
+    main .mainContent .autherSection {
+        margin: 20px 0 40px;
+        padding: 10px 15px 50px;
+    }
+
+    main .mainContent .autherSection .autherImg img {
+        width: 100%;
+    }
+
+    main .relatedPost {
+        margin-top: 10px;
+    }
+
+}
+
+/************end responsive with all media for article page*********************/
+
+/*****************start artiVideo page*******************/
+
+#artiVideo main .mainContent .banner {
+    height: 450px;
+    background-image: none;
+    /*    background-color: blue;*/
+}
+
+@media (max-width: 576px) {
+    #artiVideo main .mainContent .banner {
+        height: 370px;
+    }
+
+    #artiVideo main .mainContent .banner iframe {
+        height: 100%;
+    }
+}
+
+/*****************end artiVideo page*******************/
+
+/*we custom the width of container in some section as we need*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1250px !important;
+    }
+}
+
+
+
+/**********************THE END*******************************/
